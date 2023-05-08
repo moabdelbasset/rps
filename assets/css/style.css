@@ -1,0 +1,82 @@
+/* assets/css/style.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Intro section */
+.intro-section {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Game section */
+#game-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+#game-section div {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+}
+
+button {
+    background-color: #0099cc;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+button:hover {
+    background-color: #006699;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Score section */
+#score-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.scores {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Rules section */
+#rules {
+    background-color: #0099cc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
