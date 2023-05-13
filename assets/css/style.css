@@ -80,3 +80,12 @@ img {
     text-align: center;
     font-size: 18px;
 }
+
+/* --------- Media queries */
+
+@media (max-width: 320px) {
+    img {
+        width: 100%;
+    }
+
+}
