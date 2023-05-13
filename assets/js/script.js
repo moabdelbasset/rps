@@ -57,6 +57,10 @@ function computerTurn(playerChoice) {
 }
 
 function gamePlay(computerChoice, playerChoice) {
+  let playerScore = parseInt(document.getElementById("player1").innerText);
+  console.log(playerScore);
+  let computerScore = parseInt(document.getElementById("computer").innerText);
+  //document.getElementById("score").innerText = ++oldScore;
     if (playerChoice === computerChoice) {
         alert(`It's a tie!`);
         //return "It's a tie!";
@@ -66,9 +70,11 @@ function gamePlay(computerChoice, playerChoice) {
         (playerChoice === 'scissors' && computerChoice === 'paper')
       ) {
         alert(`You win! ${playerChoice} beats ${computerChoice}.`);
+        document.getElementById("player1").innerText = ++playerScore;
         //return "You win! " + playerChoice + " beats " + computerChoice + ".";
       } else {
         alert (`You lose! ${computerChoice} beats ${playerChoice}.`);
+        document.getElementById("computer").innerText = ++computerScore;
         //return "You lose! " + computerChoice + " beats " + playerChoice + ".";
       }
 }
