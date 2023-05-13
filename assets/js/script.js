@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM is fully loaded');
 });
 
+/**
+ * Rock function is triggered when user click on rock button that will change the image to rock image
+ */
 function rock() {
     var image = document.getElementById("full-img1");
     image.src = "assets/images/rock.JPG";
@@ -15,6 +18,9 @@ function rock() {
     computerTurn(playerChoice);
 }
 
+/**
+ * Paper function is triggered when user click on rock button that will change the image to paper image
+ */
 function paper() {
     var image = document.getElementById("full-img1");
     image.src = "assets/images/paper.JPG";
@@ -23,6 +29,9 @@ function paper() {
     computerTurn(playerChoice)
 }
 
+/**
+ * Scissors function is triggered when user click on rock button that will change the image to scissors image
+ */
 function scissors() {
     var image = document.getElementById("full-img1");
     image.src = "assets/images/scissors.JPG";
@@ -31,6 +40,9 @@ function scissors() {
     computerTurn(playerChoice)
 }
 
+/**
+ * computerTurn functions executes after player done selection
+ */
 function computerTurn(playerChoice) {
     let num1 = Math.floor(Math.random() * 2);
     console.log(num1)
@@ -56,6 +68,9 @@ function computerTurn(playerChoice) {
 
 }
 
+/**
+ * The main function that will decide which player wins and calculate the score
+ */
 function gamePlay(computerChoice, playerChoice) {
   let playerScore = parseInt(document.getElementById("player1").innerText);
   console.log(playerScore);
@@ -81,7 +96,9 @@ function gamePlay(computerChoice, playerChoice) {
         //return "You lose! " + computerChoice + " beats " + playerChoice + ".";
       }
 }
-
+/**
+ * Reset the image function to reset the image back to the original image
+ */
 function resetImage() {
   var image1 = document.getElementById("full-img1");
   var image2 = document.getElementById("full-img2");
