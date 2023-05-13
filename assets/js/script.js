@@ -12,3 +12,15 @@ function rock() {
     image.src = "assets/images/rock.JPG";
     image.alt = "Rock";
 }
+
+function paper() {
+    var image = document.getElementById("full-img1");
+    image.src = "assets/images/paper.JPG";
+    image.alt = "Paper";
+}
+
+function scissors() {
+    var image = document.getElementById("full-img1");
+    image.src = "assets/images/scissors.JPG";
+    image.alt = "Scissors";
+}
