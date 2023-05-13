@@ -11,6 +11,7 @@ function rock() {
     var image = document.getElementById("full-img1");
     image.src = "assets/images/rock.JPG";
     image.alt = "Rock";
+    computerTurn();
 }
 
 function paper() {
@@ -23,4 +24,9 @@ function scissors() {
     var image = document.getElementById("full-img1");
     image.src = "assets/images/scissors.JPG";
     image.alt = "Scissors";
+}
+
+function computerTurn() {
+    let num1 = Math.floor(Math.random() * 3);
+    console.log(num1)
 }
