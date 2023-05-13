@@ -63,6 +63,7 @@ function gamePlay(computerChoice, playerChoice) {
   //document.getElementById("score").innerText = ++oldScore;
     if (playerChoice === computerChoice) {
         alert(`It's a tie!`);
+        resetImage()
         //return "It's a tie!";
       } else if (
         (playerChoice === 'rock' && computerChoice === 'scissors') ||
@@ -71,10 +72,21 @@ function gamePlay(computerChoice, playerChoice) {
       ) {
         alert(`You win! ${playerChoice} beats ${computerChoice}.`);
         document.getElementById("player1").innerText = ++playerScore;
+        resetImage()
         //return "You win! " + playerChoice + " beats " + computerChoice + ".";
       } else {
         alert (`You lose! ${computerChoice} beats ${playerChoice}.`);
         document.getElementById("computer").innerText = ++computerScore;
+        resetImage()
         //return "You lose! " + computerChoice + " beats " + playerChoice + ".";
       }
+}
+
+function resetImage() {
+  var image1 = document.getElementById("full-img1");
+  var image2 = document.getElementById("full-img2");
+  image1.src = "assets/images/rps.JPG";
+  image1.alt = "RPS";
+  image2.src = "assets/images/rps.JPG";
+  image1.alt = "RPS";
 }
