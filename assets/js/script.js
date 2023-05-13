@@ -6,3 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('DOM is fully loaded');
 });
+
+function rock() {
+    var image = document.getElementById("full-img1");
+    image.src = "assets/images/rock.JPG";
+    image.alt = "Rock";
+}
