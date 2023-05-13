@@ -27,6 +27,19 @@ function scissors() {
 }
 
 function computerTurn() {
-    let num1 = Math.floor(Math.random() * 3);
+    let num1 = Math.floor(Math.random() * 2);
     console.log(num1)
+    let myArray = ['rock', 'paper', 'scissors'];
+    var image = document.getElementById("full-img2");
+    if (myArray[num1] == 'rock') {
+        image.src = "assets/images/rock.JPG";
+        image.alt = "Rock";
+      } else if (myArray[num1] == 'paper') {
+        image.src = "assets/images/paper.JPG";
+        image.alt = "Paper";
+      } else {
+        image.src = "assets/images/scissors.JPG";
+        image.alt = "Scissors";
+      }
+
 }
