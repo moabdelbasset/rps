@@ -84,8 +84,8 @@ img {
 /* --------- Media queries */
 
 @media (max-width: 320px) {
-    img {
-        width: 100%;
+    #score-section {
+        flex-direction: column;
     }
 
 }
