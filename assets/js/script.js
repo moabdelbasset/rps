@@ -78,7 +78,7 @@ function gamePlay(computerChoice, playerChoice) {
   //document.getElementById("score").innerText = ++oldScore;
     if (playerChoice === computerChoice) {
         alert(`It's a tie!`);
-        resetImage()
+        //resetImage();
         //return "It's a tie!";
       } else if (
         (playerChoice === 'rock' && computerChoice === 'scissors') ||
@@ -87,14 +87,15 @@ function gamePlay(computerChoice, playerChoice) {
       ) {
         alert(`You win! ${playerChoice} beats ${computerChoice}.`);
         document.getElementById("player1").innerText = ++playerScore;
-        resetImage()
+        //resetImage();
         //return "You win! " + playerChoice + " beats " + computerChoice + ".";
       } else {
         alert (`You lose! ${computerChoice} beats ${playerChoice}.`);
         document.getElementById("computer").innerText = ++computerScore;
-        resetImage()
+        //resetImage();
         //return "You lose! " + computerChoice + " beats " + playerChoice + ".";
       }
+      //resetImage();
 }
 /**
  * Reset the image function to reset the image back to the original image
@@ -106,4 +107,6 @@ function resetImage() {
   image1.alt = "RPS";
   image2.src = "assets/images/rps.JPG";
   image1.alt = "RPS";
+  let playerScore = parseInt(document.getElementById("player1").innerText);
+  let computerScore = parseInt(document.getElementById("computer").innerText);
 }
