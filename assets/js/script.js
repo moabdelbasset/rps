@@ -14,7 +14,7 @@ function rock() {
     var image = document.getElementById("full-img1");
     image.src = "assets/images/rock.JPG";
     image.alt = "Rock";
-    playerChoice = "rock"
+    playerChoice = "rock";
     computerTurn(playerChoice);
 }
 
@@ -25,8 +25,8 @@ function paper() {
     var image = document.getElementById("full-img1");
     image.src = "assets/images/paper.JPG";
     image.alt = "Paper";
-    playerChoice = "paper"
-    computerTurn(playerChoice)
+    playerChoice = "paper";
+    computerTurn(playerChoice);
 }
 
 /**
@@ -36,8 +36,8 @@ function scissors() {
     var image = document.getElementById("full-img1");
     image.src = "assets/images/scissors.JPG";
     image.alt = "Scissors";
-    playerchoice = "scissors"
-    computerTurn(playerChoice)
+    playerChoice = "scissors";
+    computerTurn(playerChoice);
 }
 
 /**
@@ -107,6 +107,6 @@ function resetImage() {
   image1.alt = "RPS";
   image2.src = "assets/images/rps.JPG";
   image1.alt = "RPS";
-  let playerScore = parseInt(document.getElementById("player1").innerText);
-  let computerScore = parseInt(document.getElementById("computer").innerText);
+  document.getElementById("computer").innerText = 0;
+  document.getElementById("player1").innerText = 0;
 }
