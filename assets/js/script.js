@@ -95,7 +95,6 @@ function gamePlay(computerChoice, playerChoice) {
         //resetImage();
         //return "You lose! " + computerChoice + " beats " + playerChoice + ".";
       }
-      //resetImage();
 }
 /**
  * Reset the image function to reset the image back to the original image
