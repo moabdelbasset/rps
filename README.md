@@ -91,3 +91,6 @@ Testing was focused to ensure the following criteria were met:
 ![Wave Accessibility main page](assets/images/readme_images/w3_index.png)
 ![Wave Accessibility game page](assets/images/readme_images/w3_game.png)
 
+![W3C HTML Validator](assets/images/readme_imges/html_valid.png)
+![W3C CSS Validatior](assets/images/readme_imges/css_validate.png)
+![JS Validator](assets/images/readme_imges/JS_validate.png)
