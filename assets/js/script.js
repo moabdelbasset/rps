@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Your code here will run after the DOM is fully loaded
 
     console.log('DOM is fully loaded');
+    let myArray = ['Rock', 'Paper', 'Scissors'];
+    let gameBtns = document.getElementsByClassName('gameBtns');
+    for (let i = 0; i < gameBtns.length; i++ ) {
+      gameBtns[i].innerHTML = myArray[i];
+    }
 });
 
 /**
