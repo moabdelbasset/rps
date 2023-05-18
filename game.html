@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rock Paper Scissors</title>
+    <link rel="shortcut icon" href="assets/images/favicon.JPG" type="image/x-icon">
+</head>
+
+<body>
+    <div class="intro-section">
+        <h1>Rock Paper Scissor</h1>
+        
+    </div>
+    <div id="game-section">
+        <div>
+            <img id="full-img1" src="assets/images/rps.JPG" alt="rps">
+        </div>
+        <div>
+            <h2>Make a choice</h2>
+            <button class="gameBtns" onclick="rock();"></button>
+            <button class="gameBtns" onclick="paper();"></button>
+            <button class="gameBtns" onclick="scissors();"></button>
+            
+        </div>
+        <div>
+            <img id="full-img2" src="assets/images/rps.JPG" alt="rps">
+        </div>     
+    </div>
+    <div id="score-section">
+        <p class="scores">You: <span id="player1">0</span></p>
+        <button onclick="resetImage();">Reset</button>
+        <p class="scores">Computer: <span id="computer">0</span></p>
+    </div>
+    <div id="rules">       
+        <p id="score-text"></p>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

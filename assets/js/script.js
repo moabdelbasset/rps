@@ -3,7 +3,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // Your code here will run after the DOM is fully loaded
-
+    // Naming the Rock, Paper, Scissors button
     console.log('DOM is fully loaded');
     let myArray = ['Rock', 'Paper', 'Scissors'];
     let gameBtns = document.getElementsByClassName('gameBtns');
@@ -11,6 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
       gameBtns[i].innerHTML = myArray[i];
     }
 });
+
+/**
+ * loadNewPage function will be triggered when a user click on New game button to start a new game
+ */
+function loadNewPage() {
+  window.location.href = "game.html";
+}
 
 /**
  * Rock function is triggered when user click on rock button that will change the image to rock image
@@ -82,7 +89,8 @@ function gamePlay(computerChoice, playerChoice) {
   let computerScore = parseInt(document.getElementById("computer").innerText);
   //document.getElementById("score").innerText = ++oldScore;
     if (playerChoice === computerChoice) {
-        alert(`It's a tie!`);
+        //alert(`It's a tie!`);
+        document.getElementById("score-text").innerHTML = "It's a tie!";
         //resetImage();
         //return "It's a tie!";
       } else if (
@@ -90,12 +98,14 @@ function gamePlay(computerChoice, playerChoice) {
         (playerChoice === 'paper' && computerChoice === 'rock') ||
         (playerChoice === 'scissors' && computerChoice === 'paper')
       ) {
-        alert(`You win! ${playerChoice} beats ${computerChoice}.`);
+        //alert(`You win! ${playerChoice} beats ${computerChoice}.`);
+        document.getElementById("score-text").innerHTML = `You win! ${playerChoice} beats ${computerChoice}.`;
         document.getElementById("player1").innerText = ++playerScore;
         //resetImage();
         //return "You win! " + playerChoice + " beats " + computerChoice + ".";
       } else {
-        alert (`You lose! ${computerChoice} beats ${playerChoice}.`);
+        //alert (`You lose! ${computerChoice} beats ${playerChoice}.`);
+        document.getElementById("score-text").innerHTML = `You lose! ${computerChoice} beats ${playerChoice}.`;
         document.getElementById("computer").innerText = ++computerScore;
         //resetImage();
         //return "You lose! " + computerChoice + " beats " + playerChoice + ".";
@@ -113,4 +123,5 @@ function resetImage() {
   image1.alt = "RPS";
   document.getElementById("computer").innerText = 0;
   document.getElementById("player1").innerText = 0;
+  document.getElementById("score-text").innerHTML = "";
 }
