@@ -42,7 +42,7 @@ h1, h2 {
 }
 
 button {
-    background-color: #0099cc;
+    background-color: #005d7c;
     color: #fff;
     font-size: 18px;
     padding: 10px 20px;
@@ -78,7 +78,7 @@ img {
 
 /* Rules section */
 #rules {
-    background-color: #0099cc;
+    background-color: #005d7c;
     color: #fff;
     padding: 20px;
     text-align: center;
