@@ -26,7 +26,11 @@ The website consists of two webpages
 
 ![Game Page](assets/images/readme_images/game_page.png)
 
-### 
+ ### Existing Features 
+ * Responsive design
+ * Score calculation
+ * Restarting the game
+ 
 
 ## Technologies 
 * HTML
@@ -47,3 +51,24 @@ The website consists of two webpages
     * favicon files were created 
 * pexels.com
     * https://www.pexels.com/ was used to get the images for my website   
+
+ ## Testing
+  ### Responsiveness 
+The pages underwent testing to ensure they were responsive across various screen sizes starting from 320px and above. The testing was performed on Chrome, Edge, Firefox, and Opera browsers.
+
+Steps to test:
+1. Open browser and navigate to [Rock Paper Scissors](https://moabdelbasset.github.io/rps/)
+2. Open the developer tools (right click and inspect)
+3. Decrease the screen width to 320px
+4. Set the zoom to 50%
+5. Click and drag the responsive window to maximum width
+
+Expected:
+Website is responsive on all screen sizes and no images are pixelated or stretched.
+No horizontal scroll is present.
+No elements overlap.
+
+Actual:
+Website was responsive on all screen sizes and no image was pixelated or stretched.
+Horizontal scroll was present because of the schedule section.
+Tested on Iphone 12 and Samsung Galaxy S8.
