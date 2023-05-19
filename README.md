@@ -31,6 +31,10 @@ The website consists of two webpages
  * Score calculation
  * Restarting the game
  
+### Features left to Implement 
+ * Adding dificulty to the game
+ * Allowing multiplayer option over network
+ * Registering users and keep record of their scores
 
 ## Technologies 
 * HTML
@@ -94,3 +98,42 @@ Testing was focused to ensure the following criteria were met:
 ![W3C HTML Validator](assets/images/readme_images/html_valid.png)
 ![W3C CSS Validatior](assets/images/readme_images/css_validate.png)
 ![JS Validator](assets/images/readme_images/JS_validate.png)
+
+Navigation Accessibility: The new game button was tested and verifed that will load the webpage.
+
+Game testing:
+In this phase I tested the game logic. After clicking on new game I verfied that clicking on the buttons rock, paper or scissors will change the left image according to the user choice.
+* Confimed when click on Rock button the left image will change to Rock.
+* Confimed when click on Paper button the left image will change to Paper.
+* Confimed when click on Scissors button the left image will change to Scissors.
+
+For computer turn I confirmed that the choice selected randomly and according to selection the right image will change accordingly/
+* Confimed when computer chooses Rock button the right image will change to Rock.
+* Confimed when computer chooses Paper button the right image will change to Paper.
+* Confimed when computer chooses  Scissors button the right image will change to Scissors.
+
+After the 2 choices were made will start decide who is the winner according to the rules. According to the winner the score will be increased by one and a text box informing which player wins and why. If the 2 players had the same choice then a message will appear that it's a tie and the score will remain as is.
+
+If the user wants to reset the score he can click on Reset button that will reset the score back to zero and change the image to the general rock paper scissors image
+
+## Deployment
+
+### Version Control
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+* The site was deployed to GitHub pages. The steps to deploy are as follows:
+* On the settings tab, from the source section down-top menu, select the main branch
+* Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+* The site was created using the Visual Studio code editor and pushed to github to the remote repository ‘Project1’.
+
+### Git commands used
+* The following git commands were used throughout development to push code to the remote repo:
+    * ```git add <file>``` - This command was used to add the file(s) to the staging area before they are committed.
+    * ```git commit -m “commit message”``` - This command was used to commit changes to the local repository queue ready for the final step.
+    * ```git push``` - This command was used to push all committed code to the remote repository on github.
+
+
+
+## Credits 
+* [An Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
+* [Flex box froggy](https://flexboxfroggy.com/)
+* [Code Institute Project Section](https://www.youtube.com/watch?v=apK6caj8bfI)
