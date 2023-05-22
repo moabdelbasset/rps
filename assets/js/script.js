@@ -11,6 +11,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+// Get start button
+let startBtn = document.getElementById("startBtn");
+/*
+If start button exist trigger the function
+*/
+if (startBtn) {
+  startBtn.addEventListener("click", loadNewPage);
+}
+
 /**
 * loadNewPage function will be triggered when a user click on New game button to start a new game
 */
@@ -47,6 +56,7 @@ if (scissorsBtn) {
 }
 
 
+
 /**
 * Rock function is triggered when user click on rock button that will change the image to rock image
 */
@@ -54,7 +64,7 @@ function rock() {
   var image = document.getElementById("full-img1");
   image.src = "assets/images/rock.JPG";
   image.alt = "Rock";
-  playerChoice = "rock";
+  let playerChoice = "rock";
   computerTurn(playerChoice);
 }
 
@@ -84,24 +94,24 @@ function scissors() {
 * computerTurn functions executes after player done selection
 */
 function computerTurn(playerChoice) {
-  var num1 = Math.floor(Math.random() * 2);
-  var myArray = ['rock', 'paper', 'scissors'];
-  var computerChoice = '';
-  var image = document.getElementById("full-img2");
+  let num1 = Math.floor(Math.random() * 2);
+  let myArray = ['rock', 'paper', 'scissors'];
+  let computerChoice = '';
+  let image = document.getElementById("full-img2");
   if (myArray[num1] == 'rock') {
     image.src = "assets/images/rock.JPG";
     image.alt = "Rock";
-    let computerChoice = 'rock';
+    computerChoice = 'rock';
     gamePlay(computerChoice, playerChoice);
   } else if (myArray[num1] == 'paper') {
     image.src = "assets/images/paper.JPG";
     image.alt = "Paper";
-    let computerChoice = 'paper';
+    computerChoice = 'paper';
     gamePlay(computerChoice, playerChoice);
   } else {
     image.src = "assets/images/scissors.JPG";
     image.alt = "Scissors";
-    let computerChoice = 'scissors';
+    computerChoice = 'scissors';
     gamePlay(computerChoice, playerChoice);
   }
 
@@ -127,6 +137,16 @@ function gamePlay(computerChoice, playerChoice) {
     document.getElementById("computer").innerText = ++computerScore;
   }
 }
+
+//Get reset button
+let resetBtn = document.getElementById("resetBtn");
+/*
+If rest button exists add event listener
+*/
+if (resetBtn) {
+  resetBtn.addEventListener("click", resetImage);
+}
+
 /**
 * Reset the image function to reset the image back to the original image
 */
