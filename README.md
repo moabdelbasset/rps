@@ -119,19 +119,20 @@ If the user wants to reset the score he can click on Reset button that will rese
 ## Deployment
 
 ### Version Control
-The site was deployed to GitHub pages. The steps to deploy are as follows:
-* The site was deployed to GitHub pages. The steps to deploy are as follows:
-* On the settings tab, from the source section down-top menu, select the main branch
-* Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-* The site was created using the Visual Studio code editor and pushed to github to the remote repository ‘Project1’.
-
-### Git commands used
 * The following git commands were used throughout development to push code to the remote repo:
     * ```git add <file>``` - This command was used to add the file(s) to the staging area before they are committed.
     * ```git commit -m “commit message”``` - This command was used to commit changes to the local repository queue ready for the final step.
     * ```git push``` - This command was used to push all committed code to the remote repository on github.
 
 
+### Deployment to Github pages
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+* The site was deployed to GitHub pages. The steps to deploy are as follows:
+* On the settings tab, from the source section down-top menu, select the main branch
+* Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+* The site was created using the Visual Studio code editor and pushed to github to the remote repository rps.
+
+[Live Link](https://github.com/moabdelbasset/rps)
 
 ## Credits 
 * [An Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
