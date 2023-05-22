@@ -19,6 +19,35 @@ function loadNewPage() {
 window.location.href = "game.html";
 }
 
+//Get rock button
+let rockBtn = document.getElementById("rockBtn");
+/*
+If rock button exists add event listener
+*/
+if(rockBtn) {
+  rockBtn.addEventListener("click", rock);
+}
+
+
+//Get paper button
+let paperBtn = document.getElementById("paperBtn");
+/*
+If rock button exists add event listener
+*/
+if(paperBtn) {
+  paperBtn.addEventListener("click", paper);
+}
+
+//Get Scissors button
+let scissorsBtn = document.getElementById("scissorsBtn");
+/*
+If rock button exists add event listener
+*/
+if(scissorsBtn) {
+  scissorsBtn.addEventListener("click", paper);
+}
+
+
 /**
 * Rock function is triggered when user click on rock button that will change the image to rock image
 */
