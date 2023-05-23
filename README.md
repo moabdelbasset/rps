@@ -152,7 +152,8 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 * The site was created using the Visual Studio code editor and pushed to github to the remote repository rps.
 
-[Live Link](https://github.com/moabdelbasset/rps)
+[Live Link](https://moabdelbasset.github.io/rps)
+[Github Link](https://github.com/moabdelbasset/rps)
 
 ## Credits 
 * [An Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
