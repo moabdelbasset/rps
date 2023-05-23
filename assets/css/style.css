@@ -26,6 +26,15 @@ h1, h2 {
     align-items: center;
 }
 
+.intro-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.intro-section a:hover {
+    text-decoration: underline;
+}
+
 /* Game section */
 #game-section {
     display: flex;
