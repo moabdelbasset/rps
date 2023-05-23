@@ -34,7 +34,7 @@ The website consists of two webpages
     * Once the computer decides the right image will change according to the computer choice.
     * There is a place for score and paragraph section tells which one wins.
     ![Score](assets/images/readme_images/score.png)
-    
+
     * There is a reset button if the user wants to reset the score.
     ![Reset Game](assets/images/readme_images/game_page.png)
 
@@ -45,6 +45,7 @@ The website consists of two webpages
  * Score calculation
  * Restarting the game
  * favicon
+ 
  ![fav icon](assets/images/readme_images/favicon-tmp.png)
  
 ### Features left to Implement 
