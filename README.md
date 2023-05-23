@@ -39,7 +39,10 @@ The website consists of two webpages
     ![Reset Game](assets/images/readme_images/game_page.png)
     * The user can click on the header to return back to the home page.
 
-
+* 404 Page:
+    * A 404 page will be implemented and will display if a user navigates to a broken link.
+    * Users will have to click on the "Rock paper scissors" to go the home page
+    ![404 page](assets/images/readme_images/404.png)
 
  ### Existing Features 
  * Responsive design
