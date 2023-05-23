@@ -85,7 +85,7 @@ img {
     margin: 0;
 }
 /* 404 page */
-.return-to-home {
+.return-to-home a {
     font-size: 2rem;
     text-align: center;
 }
