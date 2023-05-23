@@ -76,6 +76,14 @@ img {
     margin: 0;
 }
 
+/* Footer */
+
+.footer {
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+  }
+
 /* Rules section */
 #rules {
     background-color: #005d7c;
