@@ -37,6 +37,7 @@ The website consists of two webpages
 
     * There is a reset button if the user wants to reset the score.
     ![Reset Game](assets/images/readme_images/game_page.png)
+    * The user can click on the header to return back to the home page.
 
 
 
@@ -45,7 +46,7 @@ The website consists of two webpages
  * Score calculation
  * Restarting the game
  * favicon
- 
+
  ![fav icon](assets/images/readme_images/favicon-tmp.png)
  
 ### Features left to Implement 
@@ -132,6 +133,8 @@ For computer turn I confirmed that the choice selected randomly and according to
 After the 2 choices were made will start decide who is the winner according to the rules. According to the winner the score will be increased by one and a text box informing which player wins and why. If the 2 players had the same choice then a message will appear that it's a tie and the score will remain as is.
 
 If the user wants to reset the score he can click on Reset button that will reset the score back to zero and change the image to the general rock paper scissors image
+
+Confirmed when clicking on the header "Rock Paper Scissors" it will direct me to the the home page
 
 ## Deployment
 
