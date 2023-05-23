@@ -18,18 +18,34 @@ The website consists of two webpages
 * Game Page:
     * Game page where users start to play the game.
     * It contains 3 buttons of users to choose rock paper or scissors.
+    ![Game Page](assets/images/readme_images/game_page.png)
+
     * Once the user selects it will change the left picture according to the user choice.
+    * When a user clicks on rock a rock image should appear on the left side.
+    ![Choosing rock](assets/images/readme_images/rock_image.png)
+
+    * When a user clicks on paper a paper image should appear on the left side.
+    ![Choosing paper](assets/images/readme_images/paper_image.png)
+
+    * When a user clicks on scissors a scissors image should appear on the left side.
+    ![Choosing scissors](assets/images/readme_images/scissors_image.png)
+
     * Computer will decide to choose randomly between the 3 options.
     * Once the computer decides the right image will change according to the computer choice.
     * There is a place for score and paragraph section tells which one wins.
+    ![Score](assets/images/readme_images/score.png)
+    
     * There is a reset button if the user wants to reset the score.
+    ![Reset Game](assets/images/readme_images/game_page.png)
 
-![Game Page](assets/images/readme_images/game_page.png)
+
 
  ### Existing Features 
  * Responsive design
  * Score calculation
  * Restarting the game
+ * favicon
+ ![fav icon](assets/images/readme_images/favicon-tmp.png)
  
 ### Features left to Implement 
  * Adding dificulty to the game
@@ -97,7 +113,7 @@ Testing was focused to ensure the following criteria were met:
 
 ![W3C HTML Validator](assets/images/readme_images/html_valid.png)
 ![W3C CSS Validatior](assets/images/readme_images/css_validate.png)
-![JS Validator](assets/images/readme_images/JS_validate.png)
+![JS Validator](assets/images/readme_images/jshint.png)
 
 Navigation Accessibility: The new game button was tested and verifed that will load the webpage.
 
